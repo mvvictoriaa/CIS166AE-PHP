@@ -23,13 +23,10 @@ $shipping = $_POST['shipping'];
 $payments = $_POST['payments'];
 
 // Calculate the total:
-$total = $price * $quantity;
-$total = $total + $shipping;
-$total = $total - $discount;
+$total = (($price * $quantity) + $shipping) - $discount;
 
 // Determine the tax rate:
-$taxrate = $tax / 100;
-$taxrate = $taxrate + 1;
+$taxrate = ($tax / 100) + 1;
 
 // Factor in the tax rate:
 $total = $total * $taxrate;
