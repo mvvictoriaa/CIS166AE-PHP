@@ -8,8 +8,7 @@
 </head>
 <body>
 
-<?php // Script 4.2 - handle_calc.php /* This script takes values from calculator.html 
-										and performs total cost and monthly payment calculations. */
+<?php // Script 4.2 - handle_calc.php /* This script takes values from calculator.html and performs total cost and monthly payment calculations. */
 										
 // Address error handling, if you want.
 ini_set('display_errors', 1);
@@ -35,5 +34,20 @@ $taxrate = $taxrate + 1;
 // Factor in the tax rate:
 $total = $total * $taxrate;
 
-//Calculate the monthly payments:
+// Calculate the monthly payments:
 $monthly = $total / $payments; 
+
+// Print out the results:
+print "<p>You have selected to purchase:<br>
+<span class=\"number\">$quantity</span> widget(s) at <br>
+$span class=\"number\">$price</span> price each plus a <br>
+$span class=\"number\">$shipping</span> shipping cost and a <br>
+<span class=\"number\">$tax</span> percent tax rate. <br> 
+After your $<span class=\"number\">$discount</span>
+discount, the total cost is $<span class=\"number\">$total</span>.<br>
+Divided over <span class=\"number\">$payments</span> monthly payments, that would be 
+$<span class=\"number\">$monthly</span> each. </p>";
+
+?>
+</body>
+</html>
