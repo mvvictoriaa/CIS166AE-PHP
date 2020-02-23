@@ -4,14 +4,14 @@
 	<meta charset="utf-8">
 	<title>Product Cost Calculator</title>
 	<style type="text/css">
-		.number {font-weight:bold;}
+		.number { font-weight:bold; }
+	</style>
 </head>
-<body>
 
-<?php // Script 4.2 - handle_calc.php /* This script takes values from calculator.html and performs total cost and monthly payment calculations. */
-										
+<body>
+<?php // Script 4.2 - handle_calc.php /* This script takes values from calculator.html and performs total cost and monthly payment calculations. */	
+									
 // Address error handling, if you want.
-ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Get the values from the $_POST array:
@@ -38,14 +38,22 @@ $total = $total * $taxrate;
 $monthly = $total / $payments; 
 
 // Print out the results:
-print "<p>You have selected to purchase:<br>
-<span class=\"number\">$quantity</span> widget(s) at <br>
-$span class=\"number\">$price</span> price each plus a <br>
-$span class=\"number\">$shipping</span> shipping cost and a <br>
-<span class=\"number\">$tax</span> percent tax rate. <br> 
-After your $<span class=\"number\">$discount</span>
-discount, the total cost is $<span class=\"number\">$total</span>.<br>
-Divided over <span class=\"number\">$payments</span> monthly payments, that would be 
+print "<p>You have selected to 
+purchase:<br>
+<span class=\"number\">$quantity 
+</span> widget(s) at <br>
+$<span class=\"number\">$price 
+</span> price each plus a <br>
+$<span class=\"number\">$shipping
+</span> shipping cost and a <br>
+<span class=\"number\">$tax
+</span> percent tax rate.<br> 
+After your $<span class=\"number\">$discount
+</span> discount, the total cost is 
+$<span class=\"number\">$total
+</span>.<br>
+Divided over <span class=\"number\">$payments
+</span> monthly payments, that would be 
 $<span class=\"number\">$monthly</span> each. </p>";
 
 ?>
