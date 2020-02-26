@@ -11,7 +11,7 @@ error_reporting(E_ALL); // display all errors
 
 $first_name = $_POST['first_name'];
 $last_name = $_POST['last_name'];
-$posting = $_POST['posting'];
+$posting = nl2br($_POST['posting'], false);
 
 $name = $first_name .' ' .$last_name;
 
