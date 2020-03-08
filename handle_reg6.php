@@ -59,11 +59,11 @@ if ( !isset($_POST['terms'])) {
 // validate the color
 if ($_POST['color'] == 'red') {
 	$color_type = 'primary';
-} elseif ($_POST['color']) == 'yellow') {
+} elseif ($_POST['color'] == 'yellow') {
 	$color_type = 'primary';
-} elseif ($_POST['color']) == 'green') {
+} elseif ($_POST['color'] == 'green') {
 	$color_type = 'secondary';
-} elseif ($_POST['color']) == 'blue') {
+} elseif ($_POST['color'] == 'blue') {
 	$color_type = 'primary';
 } else { // problem! 
 	print '<p class="error">Please select your favorite color.</p>';
