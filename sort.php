@@ -5,7 +5,6 @@
 	<title>My Little Gradebook</title>
 </head>
 <body>
-<h1>Some of Larry Ullman's Books</h1>
 
 <?php // Script 7.5 - sort.php
 
