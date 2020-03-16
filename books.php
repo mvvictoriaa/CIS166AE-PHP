@@ -9,6 +9,7 @@
 
 <?php // Script 7.4 - books.php
 
+ini_set('display_errors', 1); // error handling
 
 // first array
 $phpvqs = [1 => 'Getting Started with PHP', 'Variables', 'HTML Forms and PHP', 'Using Numbers'];
@@ -32,12 +33,14 @@ print "<p>The first chapter of my second book is <i>{$books['PHP Advanced VQP'][
 print "<p>The fourth chapter of my fourth book is <i>{$books['PHP and MySQL VQP'][4]}</i>.</p>";
 
 // foreach
-foreach ($books as $key => $value) {
-	print "<p>$key: $value</p>\n";
+foreach ($books as $title => $chapters) {
+	print "<p>$title";
+	foreach ($chapters as $number => $chapter) {
+		print "<br />Chapter $number is $chapter";
+	}
+	print '</p>';
 }
 
 ?>
 </body>
 </html>
-
-
