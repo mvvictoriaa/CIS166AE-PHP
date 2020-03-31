@@ -1,4 +1,4 @@
-<?php // Script 8.14 - welcome.php 
+<?php // Script 9.7 - welcome1.php #2
 /* This is the welcome page. The user is redirected here after they successfully log in. */
 
 // Need the session:
