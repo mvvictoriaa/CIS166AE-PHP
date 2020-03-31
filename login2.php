@@ -37,7 +37,7 @@ $_SESSION['loggedin'] = time();
 		print '<p class="text--error">Please make sure you enter both an email address and a password!<br>Go back and try again.</p>';
 		}
 	} else { // Display the form.
-	print '<form action="login1.php" method="post" class="form--inline">
+	print '<form action="login2.php" method="post" class="form--inline">
 		<p><label for="email">Email Address:</label><input type="email" name="email" size="20"></p>
 		<p><label for="password">Password:</label><input type="password" name="password" size="20"></p>
 		<p><input type="submit" name="submit" value="Log In!" class="button--pill"></p>
