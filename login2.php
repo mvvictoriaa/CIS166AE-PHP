@@ -26,7 +26,7 @@ $_SESSION['loggedin'] = time();
 	
 // redirect the user to the welcome page!
 	ob_end_clean(); // destroy the buffer!
-	header('Location: welcome.php');
+	header('Location: welcome1.php');
 	exit();
 	
 	} else { // Incorrect!
