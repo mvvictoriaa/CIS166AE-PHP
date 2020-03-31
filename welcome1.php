@@ -9,7 +9,7 @@ define('TITLE', 'Welcome to the J.D. Salinger Fan Club!');
 include('templates/header2.html');
 
 // print a greeting
-print '<h2>Welcome to the J.D. Salinger Fan Club!</h2>');
+print '<h2>Welcome to the J.D. Salinger Fan Club!</h2>';
 print '<p>Hello, ' . $_SESSION['email'] . '!</p>';
 
 // print logged in duration:
