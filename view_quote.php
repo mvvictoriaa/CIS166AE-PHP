@@ -5,7 +5,7 @@
 	<title>View A Quotation</title>
 </head>
 <body>
-	<h1>Random Quotation</h1>
+<h1>Random Quotation</h1>
 <?php // Script 11.3 - view_quote.php 
 /* This script displays and handles an HTML form. This script reads in a file and prints a random line from it. */
 
