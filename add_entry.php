@@ -24,7 +24,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	if (!$problem) {
 	
 		// Connect and select:
-		$dbc = mysqli_connect('localhost', 'username', 'password', 'myblog');
+		$dbc = mysqli_connect('localhost', 'root', 'new1PASS', 'myblog');
 		
 		// Define the query:
 		$query = "INSERT INTO entries (id, title, entry, date_entered) VALUES (0, '$title', '$entry', NOW())";
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 
 // Display the form:
 ?>
-<form action="add_entry.php method="post">
+<form action="add_entry.php" method="post">
 	<p>Entry Title: <input type="text" name="title" size="40" maxsize="100"></p>
 	<p>Entry Text: <textarea name="entry" cols="40" rows="5"></textarea></p>
 	<input type="submit" name="submit" value="Post This Entry!">
