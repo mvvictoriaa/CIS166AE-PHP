@@ -1,5 +1,5 @@
 <?php // Script 13.7 - add_quote.php
-This script adds a quote. */
+/* This script adds a quote. */
 
 // Define a page title and include the header:
 define('TITLE', 'Add a Quote');
