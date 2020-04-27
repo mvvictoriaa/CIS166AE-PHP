@@ -23,10 +23,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		
 			$error = 'The submitted email address and password do not match those on file!';
 		}
+		
 	} else { // Forgot a field.
 		
 		$error = 'Please make sure you enter both an email address and a password!';
-	
+		
 	}
 }
 
