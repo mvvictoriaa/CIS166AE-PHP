@@ -52,3 +52,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') { // Handle the form.
 	}
 	
 } // End of submitted IF.
+
+// Leave PHP and display the form:
+?>
+
+<form action="add_quote.php" method="post">
+	<p><label>Quote <textarea name="quote" rows="5" cols="30"></textarea></label></p>
+	<p><label>Source <input type="text" name="source"></label></p>
+	<p><label>Is this a favorite? <input type="checkbox" name="favorite" value="yes"></label></p>
+	<p><input type="submit" name="submit" value="Add This Quote!"></p>
+</form>
+
+<?php include('templates/footer.html'); ?>
