@@ -40,7 +40,7 @@ if (isset($_GET['id']) && is_numeric($_GET['id']) && ($_GET['id'] > 0) ) { // Di
 	// Report on the result:
 	if (mysqli_affected_rows($dbc) == 1) {
 		print '<p class="text-success">Your feedback has been deleted.</p>';
-			header("Location: index.php?id=$customer");
+			header("Location: view_comments.php?id=$customer");
 	} else {
 		print '<p class="error">OOPS. SOMETHING WENT WRONG.</p>';
 	}
