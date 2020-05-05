@@ -1,1 +1,217 @@
 
+@charset "utf-8";
+@font-face { font-family: Love; src: url('loveandheart.ttf');}
+@font-face { font-family: Unicorn; src: url('unicorn.ttf');}
+@font-face { font-family: Baby Monkey; src: url('babymonkey.ttf');}
+@font-face { font-family: Avocado; src: url('avocado.ttf');}
+@font-face { font-family: Coolvetica; src: url('coolvetica.ttf');}
+
+/* ---- all fonts were downloaded from dafont.com ------ */
+
+/* ---------- Header Tags --------- */	
+h1 {
+	font-family: Love;
+	font-size: 60px; 
+}
+
+h2 {
+	font-family: Unicorn;
+	font-size: 30px;
+    color: #32ccfe;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	margin: auto;
+	max-width:555px;
+	text-align:center;
+
+}
+
+h3 {
+	font-family: Times New Roman;
+	font-size: 14px;
+    color: orange;
+}
+
+h4 {
+	font-family: Times New Roman, Times, serif;
+	font-size: 10px;
+	color: black;
+}
+
+.text--success {
+	font-family: Avocado;
+	color: orange;
+	border-left: 7px solid lightblue;
+	border-right: 7px solid lightblue;
+	background-color: gray;
+	border-bottom: 1px dotted white;
+	border-radius: 5px;
+	text-align: left;
+	padding-right: 7px;
+}
+
+.success {
+	font-family: Avocado;
+	color: orange;
+	border-left: 7px solid lightblue;
+	border-right: 7px solid lightblue;
+	background-color: gray;
+	border-bottom: 1px dotted white;
+	border-radius: 5px;
+	text-align: left;
+	padding-right: 7px;
+}
+
+#p1 {
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+  color: orange;
+}
+
+
+
+blockquote {
+	font-family: Coolvetica;
+	color: orange;
+	font-size: 40px;
+	border-left: 7px solid lightblue;
+	border-right: 7px solid lightblue;
+	background-color: gray;
+	border-bottom: 1px dotted white;
+	border-radius: 5px;
+	text-align: left;
+	padding-right: 7px;
+}
+
+blockquote::before {
+    content: open-quote;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+/* ---------- FORM ------------ */
+
+
+input[type=text], input[type=email], input[type=password], select, textarea {
+  width:278px;
+  padding: 8px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+input[type=number] {
+  width:80px;
+  padding: 8px 18px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #3CBC8D;
+  color: white;
+}
+
+input:focus, textarea {
+    outline: none !important;
+}
+
+.order {
+	font-family: Times New Roman;
+	font-size: 12px;
+	font-variant: small-caps;
+}
+
+
+#form {
+  max-width: 38em;
+  padding: 1em 3em 2em 3em;
+  margin: 0em auto;
+  background-color: @white;
+  border-radius: @br * 1.4;
+  box-shadow: 0px 3px 10px -2px rgba(0,0,0,0.2);
+}
+
+.label {
+	font-family: Baby Monkey;
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+
+
+
+
+.button-submit {
+	box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+	background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+	background-color:#79bbff;
+	border-radius:6px;
+	border:1px solid #84bbf3;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528ecc;
+}
+.button-submit:hover {
+	background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+	background-color:#378de5;
+}
+.button-submit:active {
+	position:relative;
+	top:1px;
+}
+
+body {
+	background-color: #f4fcff;	
+	padding: 3em;
+}
+
+hr {
+  border: 10px solid orange;
+  border-radius: 5px;
+}
+
+hr1 {
+  border-left: 4px dotted orange;
+  height: 5px;
+}
+
+/*---- navigation ----*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border-radius: 5px;
+  font-variant: small-caps;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
